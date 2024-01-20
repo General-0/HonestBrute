@@ -1,0 +1,29 @@
+HonestBrute:
+
+This tool is a directory bruteforce, fuzzer or whatever you'd like to call it.
+The purpose of this tool, is to be able to discover hidden files/directories on websites, using 
+tools such as "cewl" or using your own custom directories, although a custom-directory
+has been added onto the respository. Needless to say, questions how to use the tool is obviously quite simple.
+
+-Step.1:
+
+Add your website without the https:// or http:// simply add the "www.examplesite.com"
+
+-Step.2:
+
+It will ask if you would like to use a custom tool such as "cewl", first and foremost to install cewl simply run the command "sudo apt install cewl", cewl is essentially a custom wordlist generator that gathers when it scrapes certain words from the website, it will then save those words which can be utilized to bruteforce hidden files/directories on the website. Cewl will only be utilized when you choose the option "y", which stands for yes.
+Choosing N which stands for "No", will simply avoid cewl, and will ask you, if you would like to add your own custom wordlist. As mentioned before it has been added there which you can use to test on your website. Or you can use your custom cewl wordlist
+that was generated when it was first created.
+
+-Step.3:
+
+After selecting your wordlist to bruteforce, based on the response that the website will give, the responses will be saved as a txt file. For example
+https://www.example.com/admin 404
+https://www.example.com/wp-json 200
+https://www.example.com/wp-admin 302
+
+Based on the those responses the 400's response will be saved as "400.txt" same with the 300, "300.txt", and the 200 "200.txt". The purpose of saving them
+is to reassure that those directories/files can be viewed by the security researcher to later conduct further tests.
+
+Summary.
+For any questions about the tool feel free to ask me, this is only for education and incoming security researchers. I am NOT PROMOTING any sort of ILLEGAL ACTIVITIES, by all means use this tool with proper permission. As I was saying for any custom scripts, such as python, bash etc. Feel free to ask me. My contact is here cyberorganization1@gmail.com
